@@ -1,5 +1,5 @@
 - 基于SpringBoot+MyBatis+Shiro的心理咨询论坛社区。
-- 预览地址：暂未部署
+- 预览地址：[http://xl.liuyanzhao.com](http://xl.liuyanzhao.com)
 - 详细介绍地址：[https://liuyanzhao.com/shop/PsychologyForum.html](https://liuyanzhao.com/shop/PsychologyForum.html)
 
 
