@@ -262,6 +262,9 @@ public class QuestionController extends BaseController {
         Question question = questionService.get(questionId);
         basicCheck(question);
 
+        //当前分类
+        Category category = categoryService.get(question.getCateId());
+        question.setCategory(category);
         model.addAttribute("question", question);
 
         //所有分类

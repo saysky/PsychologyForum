@@ -141,6 +141,7 @@ public class FrontUserController extends BaseController {
         model.addAttribute("questions", postPage.getRecords());
         model.addAttribute("page", postPage);
         model.addAttribute("user", user);
+        model.addAttribute("followFlag", "N");
 
         // 判断当前用户是否关注
         Long loginUserId = getLoginUserId();
@@ -149,8 +150,6 @@ public class FrontUserController extends BaseController {
                 Follow follow = followService.findByUserIdAndAcceptUserId(loginUserId, userId);
                 if (follow != null) {
                     model.addAttribute("followFlag", "Y");
-                } else {
-                    model.addAttribute("followFlag", "N");
                 }
             } catch (Exception e) {
                 e.printStackTrace();

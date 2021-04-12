@@ -102,12 +102,16 @@ public class CategoryController extends BaseController {
         //更新的分类
         Category category = categoryService.get(cateId);
         if (category == null) {
-            return this.renderNotFound();
+            return "redirect:/admin/category/post";
         }
         model.addAttribute("updateCategory", category);
 
         // 所有分类
-        Page<Category> categoryPage = categoryService.findAll(page);
+        Category condition = new Category();
+        condition.setCateType(category.getCateType());
+        QueryCondition queryCondition = new QueryCondition();
+        queryCondition.setData(condition);
+        Page<Category> categoryPage = categoryService.findAll(page, queryCondition);
         model.addAttribute("categories", categoryPage.getRecords());
         model.addAttribute("pageInfo", PageUtil.convertPageVo(page));
         return "admin/admin_category";
