@@ -5,14 +5,20 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.forum.controller.common.BaseController;
 import com.example.forum.dto.JsonResult;
 import com.example.forum.dto.QueryCondition;
-import com.example.forum.entity.*;
-import com.example.forum.enums.*;
+import com.example.forum.entity.Category;
+import com.example.forum.entity.Question;
+import com.example.forum.entity.QuestionMarkRef;
+import com.example.forum.entity.User;
+import com.example.forum.enums.CategoryTypeEnum;
+import com.example.forum.enums.ResultCodeEnum;
 import com.example.forum.exception.MyBusinessException;
-import com.example.forum.service.*;
+import com.example.forum.service.CategoryService;
+import com.example.forum.service.QuestionMarkRefService;
+import com.example.forum.service.QuestionService;
+import com.example.forum.service.UserService;
 import com.example.forum.util.PageUtil;
 import com.example.forum.vo.SearchVo;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -75,9 +81,6 @@ public class QuestionController extends BaseController {
         for (Question question : questions.getRecords()) {
             question.setUser(userService.get(question.getUserId()));
         }
-
-
-        List<Category> allCategories = categoryService.findByCateType(CategoryTypeEnum.POST.getCode());
 
 
         //封装分类和标签

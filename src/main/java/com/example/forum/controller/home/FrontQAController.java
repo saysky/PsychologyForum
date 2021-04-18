@@ -7,7 +7,6 @@ import com.example.forum.dto.JsonResult;
 import com.example.forum.dto.QueryCondition;
 import com.example.forum.entity.*;
 import com.example.forum.enums.CommentTypeEnum;
-import com.example.forum.enums.QuestionNoticeTypeEnum;
 import com.example.forum.service.*;
 import com.example.forum.util.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.*;
+import java.util.Date;
+import java.util.List;
+import java.util.Objects;
 
 /**
  * @author saysky
@@ -183,8 +184,12 @@ public class FrontQAController extends BaseController {
         Page<QuestionMarkRef> postPage = questionMarkRefService.findAll(page, new QueryCondition<>(condition));
 
         for (QuestionMarkRef questionMarkRef : postPage.getRecords()) {
-            questionMarkRef.setUser(userService.get(questionMarkRef.getUserId()));
-            questionMarkRef.setQuestion(questionService.get(questionMarkRef.getQuestionId()));
+            Question question = questionService.get(questionMarkRef.getQuestionId());
+            if(question != null) {
+                questionMarkRef.setQuestion(question);
+                questionMarkRef.setUser(userService.get(question.getUserId()));
+            }
+
         }
         model.addAttribute("marks", postPage.getRecords());
         model.addAttribute("page", postPage);

@@ -2,7 +2,8 @@
 - 预览地址：[http://xl.liuyanzhao.com](http://xl.liuyanzhao.com)
 - 详细介绍地址：[https://liuyanzhao.com/shop/PsychologyForum.html](https://liuyanzhao.com/shop/PsychologyForum.html)
 
-
+- 新录制了讲解视频，如下图
+![1-video.png](img/video.png)
 
 ## 一、功能介绍
 - 包括管理员、用户两种角色
@@ -37,31 +38,53 @@
 - 6、Shiro
 
 ## 三、项目截图
+1-登录.png
 ![1-登录.png](img/1-登录.png)
+2-注册.png
 ![2-注册.png](img/2-注册.png)
+3-找回密码.png
 ![3-找回密码.png](img/3-找回密码.png)
+4-最新帖子-首页.png
 ![4-最新帖子-首页.png](img/4-最新帖子-首页.png)
+5-最新文章.png
 ![5-最新文章.png](img/5-最新文章.png)
+6-资源下载.png
 ![6-资源下载.png](img/6-资源下载.png)
+7-我的收藏.png
 ![7-我的收藏.png](img/7-我的收藏.png)
+8-我的关注.png
 ![8-我的关注.png](img/8-我的关注.png)
+9-我的粉丝.png
 ![9-我的粉丝.png](img/9-我的粉丝.png)
+10-文章发布.png
 ![10-文章发布.png](img/10-文章发布.png)
+11-文章管理.png
 ![11-文章管理.png](img/11-文章管理.png)
+12-文章评论管理.png
 ![12-文章评论管理.png](img/12-文章评论管理.png)
+13-帖子管理.png
 ![13-帖子管理.png](img/13-帖子管理.png)
+14-回帖管理.png
 ![14-回帖管理.png](img/14-回帖管理.png)
+15-个人信息修改.png
 ![15-个人信息修改.png](img/15-个人信息修改.png)
+16-管理员文章管理.png
 ![16-管理员文章管理.png](img/16-管理员文章管理.png)
+17-管理员帖子管理.png
 ![17-管理员帖子管理.png](img/17-管理员帖子管理.png)
+18-管理员资源管理.png
 ![18-管理员资源管理.png](img/18-管理员资源管理.png)
+19-管理员文章分类.png
 ![19-管理员文章分类.png](img/19-管理员文章分类.png)
+20-管理员帖子分类.png
 ![20-管理员帖子分类.png](img/20-管理员帖子分类.png)
+21-用户管理.png
 ![21-用户管理.png](img/21-用户管理.png)
 
 
-
-
+## 四、联系方式
+需要完整代码联系博主，微信847064370
+赠送讲解视频
 
 
 
