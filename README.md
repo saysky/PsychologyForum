@@ -1,3 +1,7 @@
+## 博主开发的其他论坛或博客项目全部在这里
+**[https://liuyanzhao.com/shop.html?k=论坛](https://liuyanzhao.com/shop.html?k=论坛)** <br/>
+**[https://liuyanzhao.com/shop.html?k=博客](https://liuyanzhao.com/shop.html?k=博客)**   <br/>
+- -------------------------------------------------------------------------------
 - 基于SpringBoot+MyBatis+Shiro的心理咨询论坛社区。
 - 预览地址：[http://xl.liuyanzhao.com](http://xl.liuyanzhao.com)
 - 详细介绍地址：[https://liuyanzhao.com/shop/PsychologyForum.html](https://liuyanzhao.com/shop/PsychologyForum.html)
